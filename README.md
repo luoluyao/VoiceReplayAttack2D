@@ -59,11 +59,14 @@
      第4个值表示：第二对麦克风第二个音素tdoa-第一个音素tdoa
     
     * 理论公式：
+    
     tdoa1 = O2 - O1
+    
     tdoa2 = O3 - O1
+    
     tdoa3 = O4 - O1
     
-    (图片)[https://github.com/luoluyao/VoiceReplayAttack2D/blob/master/pic/position.jpg]
+![图片](https://github.com/luoluyao/VoiceReplayAttack2D/blob/master/pic/position.jpg)
      
 ### theory_value_angle(angle):
 
