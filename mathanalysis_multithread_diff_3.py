@@ -3,7 +3,7 @@ import numpy as np
 
 def read_and_cal_avg():
 
-    test_file_name = "different_samplerate/log_sample48k_merge"
+    test_file_name = "different_samplerate/sample48khz_log_merge"
     test_file_name_diff = test_file_name + "_diff"
 
     file = open(test_file_name)
@@ -58,7 +58,6 @@ def read_and_cal_avg():
     [0.04, 0.0, 0.02, -0.02, 0.0, -0.01, 0.0, 0.0, 0.0],
     [0.02, 0.0, 0.01, -0.01, 0.0, 0.0, 0.01, 0.0, 0.01]
     ]
-
 
     # different angle 0 ~ 90
     # arrays = [

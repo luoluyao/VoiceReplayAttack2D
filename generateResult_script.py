@@ -1,6 +1,7 @@
-import sys
 import os
 import threading
+
+path = "different_samplerate/sample16khz"
 
 def exec_cmd(cmd):
     p = os.popen(cmd)
@@ -14,7 +15,7 @@ def os_cmd(filename):
     for i in range(0,4,):
         if i == 0 :
             continue
-        cmd = "python readwav.py " + filename + "0.wav " + filename + str(i) + ".wav " + filename + "0.TextGrid " +  filename + str( i) + ".TextGrid >> different_samplerate/log_sample48k"
+        cmd = "python readwav.py " + filename + "0.wav " + filename + str(i) + ".wav " + filename + "0.TextGrid " +  filename + str( i) + ".TextGrid >> " + path + "_log"
         cmds.append(cmd)
         print cmd
     # threads pool
@@ -60,7 +61,6 @@ def get_same_file_name(allfiles):
             os_cmd(filename[:-4])
 
 def main():
-    path = "different_samplerate/sample48khz"
     allfile = []
     dirlist(path, allfile)
     get_same_file_name(allfile)
